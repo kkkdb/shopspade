@@ -1,0 +1,44 @@
+{
+  "name": "@shopspade/utils",
+  "version": "0.0.1",
+  "private": false,
+  "description": "A collection of utility functions",
+  "keywords": ["utils", "axios", "shopspade"],
+  "author": "shopspade",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kkkdb/shopspade.git"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint . --ext .js,.ts --fix"
+  },
+  "dependencies": {
+    "ant-design-vue": "^4.1.2",
+    "axios": "^1.6.7",
+    "json-bigint": "^1.0.0"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/json-bigint": "^1.0.4",
+    "@typescript-eslint/parser": "^6.19.1",
+    "eslint": "^8.56.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}

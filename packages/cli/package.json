@@ -1,0 +1,31 @@
+{
+  "name": "@shopspade/cli",
+  "version": "1.0.3",
+  "type": "module",
+  "main": "./bin/cli.js",
+  "scripts": {
+    "lint": "eslint . --ext .js --fix",
+    "clean": "rm -rf .turbo && rm -rf node_modules"
+  },
+  "keywords": [
+    "cli",
+    "shopspade",
+    "scaffold"
+  ],
+  "author": "dbkong <k413963779@gmail.com>",
+  "license": "ISC",
+  "description": "ShopSpade 前端项目脚手架工具",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kkkdb/shopspade.git"
+  },
+  "bin": {
+    "shopspade-cli": "./bin/cli.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^13.1.0",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^8.2.5"
+  }
+}

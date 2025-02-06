@@ -1,0 +1,132 @@
+@use './base.scss' as *;
+@use './mixin.scss' as *;
+.text-main {
+  color: $primary-color !important;
+}
+.text-info {
+  color: $link-color !important;
+}
+.text-link {
+  color: $link-color !important;
+  cursor: pointer;
+}
+.text-danger {
+  color: $error-color !important;
+}
+.text-warning {
+  color: $warning-color !important;
+}
+.text-success {
+  color: $success-color !important;
+}
+.text-disabled {
+  color: $gray;
+}
+.text-gray {
+  color: gray;
+}
+.fixedPage {
+  position: fixed;
+  bottom: 18px;
+  right: 32px;
+  background: white;
+  z-index: 15;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+.inputSearch {
+  width: 310px;
+}
+.actionStyle {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .inputSearch {
+    width: 280px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .inputSearch {
+    width: 280px !important;
+  }
+}
+@media (min-width: 1366px) {
+  .inputSearch {
+    width: 306px !important;
+  }
+}
+@media (min-width: 1440px) {
+  .inputSearch {
+    width: 300px !important;
+  }
+}
+@media (min-width: 1920px) {
+  .inputSearch {
+    width: 310px !important;
+  }
+}
+
+.flex {
+  display: flex;
+  &.between {
+    justify-content: space-between;
+  }
+}
+
+.flex-ct {
+  display: flex;
+  align-items: center;
+  .ant-tag {
+    cursor: pointer;
+  }
+  &.between {
+    justify-content: space-between;
+  }
+}
+
+.flex-c-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-link {
+  color: #1890ff;
+  cursor: pointer;
+}
+
+.bg-gray {
+  background: #f0f2f5;
+}
+.bg-white {
+  background: #fff;
+}
+
+.ant-message {
+  left: 50% !important;
+}
+
+//兼容antd3.x
+.ant-modal .ant-modal-header,
+.ant-modal .ant-modal-body {
+  padding: 0 !important;
+  border-bottom: none !important;
+}
+
+.ant-modal-close-x {
+  width: 22px !important;
+  height: 22px !important;
+}
+
+.ant-radio {
+  top: 0 !important;
+}
+
+.ant-switch-checked .ant-switch-inner {
+  margin: 0 !important;
+}
+
+.ant-card .ant-card-body {
+  padding: 16px;
+}

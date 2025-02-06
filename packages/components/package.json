@@ -1,0 +1,47 @@
+{
+  "name": "@shopspade/components",
+  "version": "0.0.1",
+  "private": false,
+  "description": "A Vue 3 component library",
+  "keywords": ["vue", "components", "ui", "shopspade"],
+  "author": "shopspade",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kkkdb/shopspade.git"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./style": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix"
+  },
+  "dependencies": {
+    "vue": "^3.4.15"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.3",
+    "typescript": "~5.2.2",
+    "vite": "^5.0.12",
+    "vue-tsc": "^1.8.25",
+    "@typescript-eslint/parser": "^6.19.1",
+    "@vue/eslint-config-typescript": "^12.0.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.20.1"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.0"
+  }
+}

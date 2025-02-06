@@ -1,0 +1,44 @@
+$main: #1890ff;
+$blue: #1890ff;
+$gray: #dddddd;
+$white: #ffffff;
+$black: #000000;
+// $primary-color: #a55afb; // 全局主色
+$primary-color: #1890ff; // 全局主色
+$link-color: #1890ff; // 链接色
+$success-color: #52c41a; // 成功色
+$warning-color: #faad14; // 警告色
+$error-color: #f5222d; // 错误色
+/* 文字尺寸 */
+$font-size-small: 12px;
+$font-size-base: 14px;
+$font-size-large: 16px;
+/*文字颜色*/
+$font-color-dark: #303133;
+$font-color-base: #606266;
+$font-color-light: #909399;
+$font-color-disabled: #c0c4cc;
+
+/* 组件/浮层圆角 */
+$border-radius-base: 4px;
+
+/* 边框颜色 */
+$border-color-dark: #dcdfe6;
+$border-color-base: #d9d9d9;
+$border-color-light: #ebeef5;
+
+/* 浮层阴影 */
+$box-shadow-base: 0 2px 8px rgba(0, 0, 0, 0.15);
+$bg-gray-color: #f0f2f5;
+
+/* 页面间距 */
+$page-row-spacing: 20px;
+
+//多行溢出省略
+@mixin mulLineOverflowEllipsis($lineNum: 2) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: $lineNum;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}

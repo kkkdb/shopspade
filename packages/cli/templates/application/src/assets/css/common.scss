@@ -1,0 +1,151 @@
+@use './base.scss' as *;
+@use './mixin.scss' as *;
+.text-main {
+  color: $primary-color !important;
+}
+.text-info {
+  color: $link-color !important;
+}
+.text-link {
+  color: $link-color !important;
+  cursor: pointer;
+}
+.text-danger {
+  color: $error-color !important;
+}
+.text-warning {
+  color: $warning-color !important;
+}
+.text-success {
+  color: $success-color !important;
+}
+.text-disabled {
+  color: $gray;
+}
+.text-gray {
+  color: gray;
+}
+.ant-btn {
+  ::v-deep(.iconfont) {
+    font-size: 14px;
+    margin-right: 5px;
+  }
+}
+::v-deep(.tableBottom) {
+  margin-bottom: 35px;
+}
+
+::v-deep(.tabButton) {
+  border-color: #0088ff;
+  color: #0088ff;
+}
+.ant-timeline {
+  ::v-deep(.ant-timeline-item) {
+    padding-bottom: 0 !important;
+  }
+}
+.fixedPage {
+  position: fixed;
+  bottom: 18px;
+  right: 32px;
+  background: white;
+  z-index: 15;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+.inputSearch {
+  width: 310px;
+}
+.actionStyle {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .inputSearch {
+    width: 280px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .inputSearch {
+    width: 280px !important;
+  }
+}
+@media (min-width: 1366px) {
+  .inputSearch {
+    width: 306px !important;
+  }
+}
+@media (min-width: 1440px) {
+  .inputSearch {
+    width: 300px !important;
+  }
+}
+@media (min-width: 1920px) {
+  .inputSearch {
+    width: 310px !important;
+  }
+}
+
+// 时间轴的样式
+.timeLineBottom {
+  color: #c7c7c7;
+}
+
+// alert 样式
+.ant-alert {
+  box-sizing: border-box;
+  margin: 0;
+  color: #000000d9;
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: 'tnum';
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 6px 15px;
+  word-wrap: break-word;
+  border-radius: 2px;
+}
+.ant-alert-info {
+  border: 1px solid #91d5ff;
+}
+.ant-picker {
+  border: 1px solid #d9d9d9;
+}
+.ant-picker {
+  ::v-deep(.ant-picker-input) {
+    padding: 4px 11px !important;
+  }
+}
+$green: green;
+
+.flex {
+  display: flex;
+  &.between {
+    justify-content: space-between;
+  }
+}
+
+.flex-ct {
+  display: flex;
+  align-items: center;
+  .ant-tag {
+    cursor: pointer;
+  }
+  &.between {
+    justify-content: space-between;
+  }
+}
+
+.flex-c-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-link {
+  color: #1890ff;
+  cursor: pointer;
+}
