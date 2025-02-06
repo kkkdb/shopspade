@@ -6,19 +6,44 @@ This is a monorepo project containing a Vue 3 component library and utility func
 
 ```
 shopspade/
-```
+
 ├── packages/
 │   ├── components/     # Vue 3 component library
-│   └── utils/         # Utility library
+│   ├── utils/         # Utility library
+│   └── cli/          # Project scaffold CLI tool
+├── docs/             # Documentation
 ├── examples/          # Example projects
 ```
 
 ## Installation
 
+### CLI Tool
+
+```bash
+npm install -g @shopspade/cli
+```
+
+The CLI tool helps you quickly scaffold new frontend projects with ShopSpade's recommended configurations and best practices.
+
 ### Components
 
 ```bash
 pnpm add @shopspade/components
+```
+
+## Documentation
+
+本地运行文档：
+
+```bash
+# 开发模式
+pnpm docs:dev
+
+# 构建文档
+pnpm docs:build
+
+# 预览构建后的文档
+pnpm docs:preview
 ```
 
 ### Utils
