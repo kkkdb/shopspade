@@ -102,3 +102,32 @@ import { formatDate, debounce } from '@shopspade/utils'
 - `pnpm lint`: Lint all packages
 - `pnpm test`: Run tests
 - `pnpm clean`: Clean build artifacts
+
+
+## CI/CD
+
+1. 创建变更集
+```
+pnpm changeset
+```
+
+2. 提交变更
+```
+git add . && git commit -m "chore: add changeset"
+```
+
+3. 更新版本和变更日志
+```
+pnpm changeset version
+```
+
+4. 提交版本更新
+```
+git add . && git commit -m "chore: version packages"
+```
+
+5. 创建标签并推送
+```
+git tag v1.0.x
+git push --tags
+```
