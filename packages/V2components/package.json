@@ -1,0 +1,65 @@
+{
+  "name": "@shopspade/v2-components",
+  "version": "0.0.1",
+  "private": false,
+  "description": "A Vue 2 component library",
+  "keywords": [
+    "vue2",
+    "components",
+    "ui",
+    "shopspade"
+  ],
+  "author": "shopspade",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kkkdb/shopspade.git"
+  },
+  "main": "./dist/index.common.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.common.js"
+    },
+    "./style": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name index src/index.ts",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "core-js": "^3.8.3",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@types/vue": "^1.0.31",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "typescript": "~4.5.5",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "peerDependencies": {
+    "ant-design-vue": "^1.7.8",
+    "vue": "^2.6.14"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "dist"
+  ]
+}

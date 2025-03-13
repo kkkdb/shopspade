@@ -22,3 +22,6 @@ export * from './cookie'
 // Axios utilities
 export { default as request } from './axios/index'
 export * from './axios/types'
+
+// sso utilities
+export * from './singlePointLogin'
